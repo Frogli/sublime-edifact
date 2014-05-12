@@ -1,0 +1,36 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Edifact
+scopeName: text.edi
+fileTypes: [edi]
+uuid: 0b3e7731-5990-4852-b076-07c5cceccb38
+
+patterns:
+  # Some global stuf, field, sub-segment seperator and line terminator
+  - name: keyword.other.edi
+    comment: punctuation.seperator.field.edi
+    match: ([\+]+)
+
+  - name: keyword.operator.edi
+    comment: punctuation.definition.field.edi
+    match: ([\:])+
+
+  - name: string.quoted.single.edi  
+    comment: punctuation.terminator.edi
+    match: \'\n
+
+  - include: '#repository'
+  - include: '#segments'
+
+repository:
+  segments:
+    patterns:
+    - name: keyword.control.edi
+      match: ^[A-Z0-9]{3}
+
+    - name: constant.language.edi
+      match: \b(PAT|MED|DOS)\b
+
+    - name: constant.character.escape.java
+      match: \?[\']
+...
