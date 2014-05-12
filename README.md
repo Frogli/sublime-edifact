@@ -7,7 +7,7 @@ Sublime Text syntax highlighting for Edifact
 
 Clone the repository in your Sublime Text "Packages" directory:
 
-    git clone https://github.com/clifford-github/sublime-edifact.git Edifact
+    git clone https://github.com/clifford-github/sublime-edifact.git
 
 The "Packages" directory is located at:
 
