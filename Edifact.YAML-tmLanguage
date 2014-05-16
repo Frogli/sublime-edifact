@@ -9,11 +9,7 @@ patterns:
   # Some global stuf, field, sub-segment seperator and line terminator
   - name: keyword.other.edi
     comment: punctuation.seperator.field.edi
-    match: ([\+]+)
-
-  - name: keyword.operator.edi
-    comment: punctuation.definition.field.edi
-    match: ([\:])+
+    match: ([\+\:]+)
 
   - name: string.quoted.single.edi  
     comment: punctuation.terminator.edi
@@ -26,10 +22,13 @@ repository:
   segments:
     patterns:
     - name: keyword.control.edi
-      match: ^[A-Z0-9]{3}
+      match: (^[A-Z0-9]{3})|\b(AGR|BGM|BY|CAV|CCI|CNT|DDE|DDK|DDQ|DP|DTM|ERC|FTX|GC|GRP|GRU|IDE|INP|IT|IV|LIN|LOC|MKS|MR|MS|NAD|PIA|PQ|PRC|REG|RFF|QTY|SE|SEQ|SO|STS|SU|TAX|UCI|UD|UNA|UNB|UNH|UNOC|UNS|UNT|UNZ)\b
 
-    - name: constant.language.edi
-      match: \b(PAT|MED|DOS)\b
+    - name: keyword.other.edi
+      match: \b(PAT|MED|DOS|EPI|AGB|EML|ACB)\b
+    
+    - name: constant.character.edi
+      match: \b(PRK|GPK|HPK|PRE)\b
 
     - name: constant.character.escape.java
       match: \?[\']
