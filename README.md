@@ -11,6 +11,6 @@ Clone the repository in your Sublime Text "Packages" directory:
 
 The "Packages" directory is located at:
 
-- OS X: ~/Library/Application Support/Sublime Text 2/Packages/
-- Linux: ~/.Sublime Text 2/Packages/
-- Windows: %APPDATA%/Sublime Text 2/Packages/
+- OS X: ~/Library/Application Support/Sublime Text 3/Packages/User
+- Linux: ~/.Sublime Text 3/Packages/User
+- Windows: %APPDATA%/Sublime Text 3/Packages/User
