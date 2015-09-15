@@ -31,5 +31,5 @@ repository:
       match: \b(PRK|GPK|HPK|PRE)\b
 
     - name: constant.character.escape.java
-      match: \?[\']
+      match: \?[\'\?\:\+]
 ...
