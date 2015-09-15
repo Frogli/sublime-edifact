@@ -7,10 +7,10 @@ Sublime Text syntax highlighting for Edifact
 
 Clone the repository in your Sublime Text "Packages" directory:
 
-    git clone https://github.com/clifford-github/sublime-edifact.git
+    git clone https://github.com/Frogli/sublime-edifact.git
 
 The "Packages" directory is located at:
 
-- OS X: ~/Library/Application Support/Sublime Text 2/Packages/
-- Linux: ~/.Sublime Text 2/Packages/
-- Windows: %APPDATA%/Sublime Text 2/Packages/
+- OS X: ~/Library/Application Support/Sublime Text 3/Packages/User
+- Linux: ~/.Sublime Text 3/Packages/User
+- Windows: %APPDATA%/Sublime Text 3/Packages/User
